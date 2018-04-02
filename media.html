@@ -2,8 +2,61 @@
 <html>
 
 <head>
-  <title>David Bui: Media</title>
-  <meta name="application-name" content="David Bui's Personal Website">
+  <title>Ben Sun: Hista-photo-gram(Copyright)</title>
+  <meta name="application-name" content="Ben Suh's Personal Website">
+
+  <script type="text/javascript">
+
+  function changeImage(id) {
+      // console.log(document.getElementById("img").src);
+      var imgBen = document.getElementById(id).getAttribute("src");
+      console.log(imgBen);
+      if ( imgBen == "img/HOT20.jpg")
+      {
+          document.getElementById(id).src = "img/HOT10.jpg";
+      }
+
+      else if (imgBen == "img/HOT10.jpg")
+      {
+          document.getElementById(id).src = "img/HOT.jpg";
+      }
+
+      if (imgBen == "img/Pool20.jpg")
+      {
+          document.getElementById(id).src = "img/Pool10.jpg";
+      }
+
+      else if (imgBen == "img/Pool10.jpg")
+      {
+          document.getElementById(id).src = "img/Pool.jpg";
+      }
+
+      if (imgBen == "img/Track20.jpg")
+      {
+          document.getElementById(id).src = "img/Track10.jpg";
+      }
+
+      else if (imgBen == "img/Track10.jpg")
+      {
+          document.getElementById(id).src = "img/Track.jpg";
+      }
+
+      if (imgBen == "img/Wrestle20.jpg")
+      {
+          document.getElementById(id).src = "img/Wrestle10.jpg";
+      }
+
+      else if (imgBen == "img/Wrestle10.jpg")
+      {
+          document.getElementById(id).src = "img/Wrestle.jpg";
+      }
+      // else
+      // {
+      //     document.getElementById(id).src = "img/HOT.jpg"
+      // }
+
+  }
+  </script>
 
   <!-- CSS -->
   <style>
@@ -51,94 +104,50 @@
   </style>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="David Bui" />
+  <meta name="description" content="Ben Suh" />
 
-  <meta property="og:title" content="David Bui's Personal Site">
-  <meta property="og:description" content="David Bui is a CS student at UC Berkeley.">
+  <meta property="og:title" content="Ben Suh's Personal Site">
+  <meta property="og:description" content="Ben Suh">
 
 </head>
 
 <body>
   <center>
-    <h1>Book and Game reviews and other stuff</h1>
+    <h1>Hista-photo-gram(Copyright)</h1>
     <hr>
     <table>
       <tr>
         <td>
-          <a href="index.html">
+          <a href="home.html">
             <img src="img/home.gif" /> Home</a>
         </td>
         <td>
-          <a href="work.html">
-            <img src="img/email.gif"> Web (and other) Design</a>
+          <a href="https://www.behance.net/BenSuh">
+            <img src="img/email.gif"><br> Web (and other) Design</a>
         </td>
         <td>
-          <a href="media.html">
-            <img src="img/book3.gif"> Book and Game Reviews</a>&
+          <a href="https://gchs.gckschools.com/UserFiles/Servers/Server_60571/File/Wrestling/State%20Tournament%20Brackets/2003%20State%20Brackets%20All.pdf">
+            <img src="img/book3.gif"><br> Physical Prowess...from high school</a>&
         </td>
         <td>
-          < <a href="resume.html">
-            <img src="img/work.gif"> Resume</a>
+          <a href="http://archive.news.ku.edu/2004/04N/DecNews/Dec29/counties/johnson.html">
+            <img src="img/work.gif"><br> Award</a>
         </td>
       </tr>
     </table>
   </center>
-  <h3>The reviews are coming soon I'm sorry for not getting to them fast enough. However, for now, enjoy this incomplete list
-    at least of most of the media i've consumed the last few months while on sabbatical
+  <h3>See me, you see?
   </h3>
   <img src="img/01.gif" />
   <img src="img/07.gif" />
   <img src="img/01.gif" />
 
   <section id="content">
-    <h2>Books</h2>
-    <ul>
-      <li>Skin In The Game (Currently Reading)</li>
-      <li>American Kingpin</li>
-      <li>Thinking Fast and Slow (Currently Reading)</li>
-      <li>Nudge</li>
-      <li>Hacking: The Art of Exploitation (On Hold)</li>
-      <li>100 Years of Solitude (On Hold)</li>
-      <li>Creativity Inc (Currently Reading)</li>
-      <li>How to Dissapear Completely and Never Be Found</li>
-      <li>99u: Maximize Your Potential</li>
-      <li>Barbarians at the Gate</li>
-      <li>Principles</li>
-      <li>Sapiens</li>
-      <li>Shoe Dog</li>
-      <li>The Everything Store</li>
-      <li>The Subtle Art of Not Giving A Fuck</li>
-      <li>The Box</li>
-      <li>Deep Work</li>
-      <li>Dreamland</li>
-      <li>I Will Teach You To Be Rich</li>
-      <li>Business Adventures</li>
-    </ul>
-    <h2>TV Shows/Movies</h2>
-    <ul>
-      <li></li>
-      <li>The Wire (Currently Watching)</li>
-      <li>Mr Robot</li>
-      <li>Person of Interest</li>
-    </ul>
-    <h3>Video Games</h3>
-    <ul>
-      <li>Sleeping Dogs</li>
-      <li>Fortnite</li>
-      <li>Crypt of the Nercodancer</li>
-      <li>Watch Dogs 2</li>
-      <li>A Night In The Woods</li>
-      <li>The Stanley Parable</li>
-      <li>Stardew Valley</li>
-      <li>Undertale</li>
-      <li>Super Mario Odyssey</li>
-      <li>Earthbound (Replay)</li>
-      <li>Doki Doki Literature Club</li>
-      <li>Zelda: Breath of the Wild</li>
-      <li>Actual Sunlight</li>
-      <li>Super Mario World</li>
-      <li>Zelda: A Link to the Past</li>
-    </ul>
+    <img src="img/HOT20.jpg" id="imgHOT" onclick="changeImage(id)" usemap="#SUB15" width=500 />
+    <img src="img/Pool20.jpg" id="imgPool" onclick="changeImage(id)" usemap="#SUB15" width=500 />
+    <img src="img/Track20.jpg" id="imgTrack" onclick="changeImage(id)" usemap="#SUB15" width=500 />
+    <img src="img/Wrestle20.jpg" id="imgWrestle" onclick="changeImage(id)" usemap="#SUB15" width=500 />
+
   </section>
 </body>
 
