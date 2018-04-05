@@ -5,79 +5,12 @@
   <title>Ben Sun: Hista-photo-gram(Copyright)</title>
   <meta name="application-name" content="Ben Suh's Personal Website">
 
-  <script type="text/javascript">
-
-  function changeImage(id) {
-      // console.log(document.getElementById("img").src);
-      var imgBen = document.getElementById(id).getAttribute("src");
-      console.log(imgBen);
-      if ( imgBen == "img/HOT20.jpg")
-      {
-          document.getElementById(id).src = "img/HOT10.jpg";
-      }
-
-      else if (imgBen == "img/HOT10.jpg")
-      {
-          document.getElementById("pizza").hidden=true;
-          document.getElementById(id).src = "img/HOT.jpg";
-      }
-
-      if (imgBen == "img/Pool20.jpg")
-      {
-          document.getElementById(id).src = "img/Pool10.jpg";
-      }
-
-      else if (imgBen == "img/Pool10.jpg")
-      {
-          document.getElementById("pizza1").hidden=true;
-          document.getElementById(id).src = "img/Pool.jpg";
-      }
-
-      if (imgBen == "img/Track20.jpg")
-      {
-          document.getElementById(id).src = "img/Track10.jpg";
-      }
-
-      else if (imgBen == "img/Track10.jpg")
-      {
-          document.getElementById("pizza2").hidden=true;
-          document.getElementById(id).src = "img/Track.jpg";
-      }
-
-      if (imgBen == "img/Wrestle20.jpg")
-      {
-          document.getElementById(id).src = "img/Wrestle10.jpg";
-      }
-
-      else if (imgBen == "img/Wrestle10.jpg")
-      {
-          document.getElementById("pizza3").hidden=true;
-          document.getElementById(id).src = "img/Wrestle.jpg";
-      }
-
-      if (imgBen == "img/champ20.jpg")
-      {
-          document.getElementById(id).src = "img/champ10.jpg";
-      }
-
-      else if (imgBen == "img/champ10.jpg")
-      {
-          document.getElementById("pizza4").hidden=true;
-          document.getElementById(id).src = "img/champ.jpg";
-      }
-      // else
-      // {
-      //     document.getElementById(id).src = "img/HOT.jpg"
-      // }
-
-  }
-  </script>
-
   <!-- CSS -->
   <style>
     body {
       background-image: url("img/flower.gif");
       font-size: 20px;
+      z-index: 1;
     }
 
     .container {
@@ -187,6 +120,32 @@
   		z-index: 2;
 	   }
 
+     #modal1 {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        z-index: 1010;
+        height: 100%;
+        width: 100%;
+      }
+
+    .modalcontent {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 1rem 1.5rem;
+        width: 24rem;
+        border-radius: 0.5rem;
+        border-width:5px;
+        border-style:dotted solid;
+
+    }
+
   </style>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -200,6 +159,15 @@
 <body>
   <center>
     <h1>Hista-photo-gram(Copyright)</h1>
+
+      <div class="modal1" id="modal">
+        <div class="modalcontent">
+            <span id="close-button">&times;</span>
+            <img src="img/aol.gif" />
+            <h2>You've got Mail!</h2>
+        </div>
+      </div>
+
     <hr>
     <table>
       <tr>
@@ -227,7 +195,6 @@
   <img src="img/01.gif" />
   <img src="img/07.gif" />
   <img src="img/01.gif" /></br>
-  <img src="img/aol.gif" />
 
   <section id="content">
     <img src="img/HOT20.jpg" class="HOT20" id="imgHOT" onclick="changeImage(id)" usemap="#SUB15" width=500 />
@@ -243,6 +210,83 @@
 
     <!-- <img alt="" src="img/pizza.gif" width=100 class="fish" background="url(pizza.jpg)" /> -->
   </section>
-</body>
 
+  <iframe class="meme" width="560" height="315" src="https://www.youtube.com/embed/1UJpHk2njOk?autoplay=1"
+    frameborder="0" allowfullscreen> </iframe>​
+
+</body>
+<script type="text/javascript">
+
+function changeImage(id) {
+    // console.log(document.getElementById("img").src);
+    var imgBen = document.getElementById(id).getAttribute("src");
+    console.log(imgBen);
+    if ( imgBen == "img/HOT20.jpg")
+    {
+        document.getElementById(id).src = "img/HOT10.jpg";
+    }
+
+    else if (imgBen == "img/HOT10.jpg")
+    {
+        document.getElementById("pizza").hidden=true;
+        document.getElementById(id).src = "img/HOT.jpg";
+    }
+
+    if (imgBen == "img/Pool20.jpg")
+    {
+        document.getElementById(id).src = "img/Pool10.jpg";
+    }
+
+    else if (imgBen == "img/Pool10.jpg")
+    {
+        document.getElementById("pizza1").hidden=true;
+        document.getElementById(id).src = "img/Pool.jpg";
+    }
+
+    if (imgBen == "img/Track20.jpg")
+    {
+        document.getElementById(id).src = "img/Track10.jpg";
+    }
+
+    else if (imgBen == "img/Track10.jpg")
+    {
+        document.getElementById("pizza2").hidden=true;
+        document.getElementById(id).src = "img/Track.jpg";
+    }
+
+    if (imgBen == "img/Wrestle20.jpg")
+    {
+        document.getElementById(id).src = "img/Wrestle10.jpg";
+    }
+
+    else if (imgBen == "img/Wrestle10.jpg")
+    {
+        document.getElementById("pizza3").hidden=true;
+        document.getElementById(id).src = "img/Wrestle.jpg";
+    }
+
+    if (imgBen == "img/champ20.jpg")
+    {
+        document.getElementById(id).src = "img/champ10.jpg";
+    }
+
+    else if (imgBen == "img/champ10.jpg")
+    {
+        document.getElementById("pizza4").hidden=true;
+        document.getElementById(id).src = "img/champ.jpg";
+    }
+    // else
+    // {
+    //     document.getElementById(id).src = "img/HOT.jpg"
+    // }
+
+}
+
+  window.onload = function () {
+      document.getElementById('close-button').onclick = function () {
+      document.getElementById('modal').style.display = "none"
+    };
+  };
+
+</script>
 </html>
