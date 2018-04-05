@@ -18,6 +18,7 @@
 
       else if (imgBen == "img/HOT10.jpg")
       {
+          document.getElementById("pizza").hidden=true;
           document.getElementById(id).src = "img/HOT.jpg";
       }
 
@@ -28,6 +29,7 @@
 
       else if (imgBen == "img/Pool10.jpg")
       {
+          document.getElementById("pizza1").hidden=true;
           document.getElementById(id).src = "img/Pool.jpg";
       }
 
@@ -38,6 +40,7 @@
 
       else if (imgBen == "img/Track10.jpg")
       {
+          document.getElementById("pizza2").hidden=true;
           document.getElementById(id).src = "img/Track.jpg";
       }
 
@@ -48,6 +51,7 @@
 
       else if (imgBen == "img/Wrestle10.jpg")
       {
+          document.getElementById("pizza3").hidden=true;
           document.getElementById(id).src = "img/Wrestle.jpg";
       }
 
@@ -58,6 +62,7 @@
 
       else if (imgBen == "img/champ10.jpg")
       {
+          document.getElementById("pizza4").hidden=true;
           document.getElementById(id).src = "img/champ.jpg";
       }
       // else
@@ -111,6 +116,77 @@
     h3 {
       color: green;
     }
+
+    .HOT20 {
+  		position: absolute;
+  		top: 800px;
+  		left: 10px;
+  		z-index: 1;
+	   }
+
+     .Pool20 {
+   		position: absolute;
+   		top: 1310px;
+   		left: 10px;
+   		z-index: 1;
+ 	   }
+
+     .Track20 {
+   		position: absolute;
+   		top: 1660px;
+   		left: 10px;
+   		z-index: 1;
+ 	   }
+
+     .Wrestle20 {
+   		position: absolute;
+   		top: 2340px;
+   		left: 10px;
+   		z-index: 1;
+ 	   }
+
+     .champ20 {
+   		position: absolute;
+   		top: 3020px;
+   		left: 10px;
+   		z-index: 1;
+ 	   }
+
+	   .pizza {
+  		position: absolute;
+  		top: 1000px;
+  		left: 200px;
+  		z-index: 2;
+	   }
+
+     .pizza1 {
+  		position: absolute;
+  		top: 1420px;
+  		left: 200px;
+  		z-index: 2;
+	   }
+
+     .pizza2 {
+  		position: absolute;
+  		top: 1920px;
+  		left: 200px;
+  		z-index: 2;
+	   }
+
+     .pizza3 {
+  		position: absolute;
+  		top: 2610px;
+  		left: 200px;
+  		z-index: 2;
+	   }
+
+     .pizza4 {
+  		position: absolute;
+  		top: 3290px;
+  		left: 200px;
+  		z-index: 2;
+	   }
+
   </style>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -154,12 +230,18 @@
   <img src="img/aol.gif" />
 
   <section id="content">
-    <img src="img/HOT20.jpg" id="imgHOT" onclick="changeImage(id)" usemap="#SUB15" width=500 />
-    <img src="img/Pool20.jpg" id="imgPool" onclick="changeImage(id)" usemap="#SUB15" width=500 />
-    <img src="img/Track20.jpg" id="imgTrack" onclick="changeImage(id)" usemap="#SUB15" width=500 />
-    <img src="img/Wrestle20.jpg" id="imgWrestle" onclick="changeImage(id)" usemap="#SUB15" width=500 />
-    <img src="img/champ20.jpg" id="imgChamp" onclick="changeImage(id)" usemap="#SUB15" width=500 />
+    <img src="img/HOT20.jpg" class="HOT20" id="imgHOT" onclick="changeImage(id)" usemap="#SUB15" width=500 />
+    <img src="img/Pool20.jpg" class="Pool20" id="imgPool" onclick="changeImage(id)" usemap="#SUB15" width=500 />
+    <img src="img/Track20.jpg" class="Track20" id="imgTrack" onclick="changeImage(id)" usemap="#SUB15" width=500 />
+    <img src="img/Wrestle20.jpg" class="Wrestle20" id="imgWrestle" onclick="changeImage(id)" usemap="#SUB15" width=500 />
+    <img src="img/champ20.jpg" class="champ20" id="imgChamp" onclick="changeImage(id)" usemap="#SUB15" width=500 />
+    <img alt="" src="img/pizza.gif" id="pizza" width=100 class="pizza" />
+    <img alt="" src="img/pizza1.gif" id="pizza1" width=100 class="pizza1" />
+    <img alt="" src="img/pizza2.gif" id="pizza2" width=100 class="pizza2" />
+    <img alt="" src="img/pizza3.gif" id="pizza3" width=100 class="pizza3" />
+    <img alt="" src="img/pizza4.gif" id="pizza4" width=100 class="pizza4" />
 
+    <!-- <img alt="" src="img/pizza.gif" width=100 class="fish" background="url(pizza.jpg)" /> -->
   </section>
 </body>
 
