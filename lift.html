@@ -2,13 +2,14 @@
 <html>
 
 <head>
-  <title>Ben Sun: Hista-photo-gram(Copyright)</title>
+  <title>Ben Sun: Lift Goals(C)</title>
   <meta name="application-name" content="Ben Suh's Personal Website">
 
   <!-- CSS -->
   <style>
     body {
-      background-image: url("img/flower.gif");
+      background-image: url("img/metal.jpg");
+
       font-size: 20px;
       z-index: 1;
     }
@@ -43,11 +44,13 @@
     }
 
     h1 {
-      color: red;
+      color: white;
+      text-shadow: 2px 2px #000;
     }
 
-    h3 {
-      color: green;
+    h2 {
+      color: white;
+      text-shadow: 2px 2px #000;
     }
 
     .HOT20 {
@@ -158,15 +161,7 @@
 
 <body>
   <center>
-    <h1>Hista-photo-gram(Copyright)</h1>
-
-      <div class="modal1" id="modal">
-        <div class="modalcontent">
-            <span id="close-button">&times;</span>
-            <img src="img/aol.gif" />
-            <h2>You've got Mail!</h2>
-        </div>
-      </div>
+    <h1>Lift Goals(C)</h1>
 
     <hr>
     <table>
@@ -187,103 +182,25 @@
           <a href="http://archive.news.ku.edu/2004/04N/DecNews/Dec29/counties/johnson.html">
             <img src="img/work.gif"><br> Award</a>
         </td>
+        <td>
+          < <a href="media.html">
+            <img src="img/camera1.gif"><br> Hista-photo-gram(Copyright)</a>
+        </td>
       </tr>
     </table>
   </center>
-  <h3>See me, you see?
+  <h2>And now, for some serious business. Every else has goals. I have headless body idols with my own face.
   </h3>
-  <img src="img/01.gif" />
-  <img src="img/07.gif" />
-  <img src="img/01.gif" /></br>
+  </br>
 
   <section id="content">
-    <img src="img/HOT20.jpg" class="HOT20" id="imgHOT" onclick="changeImage(id)" usemap="#SUB15" width=500 />
-    <img src="img/Pool20.jpg" class="Pool20" id="imgPool" onclick="changeImage(id)" usemap="#SUB15" width=500 />
-    <img src="img/Track20.jpg" class="Track20" id="imgTrack" onclick="changeImage(id)" usemap="#SUB15" width=500 />
-    <img src="img/Wrestle20.jpg" class="Wrestle20" id="imgWrestle" onclick="changeImage(id)" usemap="#SUB15" width=500 />
-    <img src="img/champ20.jpg" class="champ20" id="imgChamp" onclick="changeImage(id)" usemap="#SUB15" width=500 />
-    <img alt="" src="img/pizza.gif" id="pizza" width=100 class="pizza" />
-    <img alt="" src="img/pizza1.gif" id="pizza1" width=100 class="pizza1" />
-    <img alt="" src="img/pizza2.gif" id="pizza2" width=100 class="pizza2" />
-    <img alt="" src="img/pizza3.gif" id="pizza3" width=100 class="pizza3" />
-    <img alt="" src="img/pizza4.gif" id="pizza4" width=100 class="pizza4" />
+    <img src="img/ben-mus1.jpeg" class="HOT20" id="imgHOT" onclick="changeImage(id)" usemap="#SUB15" width=500 />
+    <img src="img/ben-mus2.jpeg" class="Pool20" id="imgPool" onclick="changeImage(id)" usemap="#SUB15" width=500 />
 
   </section>
-
-  <iframe class="meme" src="https://www.youtube.com/embed/1UJpHk2njOk?autoplay=1"></iframe>​
+  <!-- <iframe src="https://www.youtube.com/embed/DLzxrzFCyOs?autoplay=1"></iframe> -->
+  <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+  <iframe src="https://www.youtube.com/embed/DLzxrzFCyOs?autoplay=1"></iframe>​
 </body>
-<script type="text/javascript">
 
-function changeImage(id) {
-    // console.log(document.getElementById("img").src);
-    var imgBen = document.getElementById(id).getAttribute("src");
-    console.log(imgBen);
-    if ( imgBen == "img/HOT20.jpg")
-    {
-        document.getElementById(id).src = "img/HOT10.jpg";
-    }
-
-    else if (imgBen == "img/HOT10.jpg")
-    {
-        document.getElementById("pizza").hidden=true;
-        document.getElementById(id).src = "img/HOT.jpg";
-    }
-
-    if (imgBen == "img/Pool20.jpg")
-    {
-        document.getElementById(id).src = "img/Pool10.jpg";
-    }
-
-    else if (imgBen == "img/Pool10.jpg")
-    {
-        document.getElementById("pizza1").hidden=true;
-        document.getElementById(id).src = "img/Pool.jpg";
-    }
-
-    if (imgBen == "img/Track20.jpg")
-    {
-        document.getElementById(id).src = "img/Track10.jpg";
-    }
-
-    else if (imgBen == "img/Track10.jpg")
-    {
-        document.getElementById("pizza2").hidden=true;
-        document.getElementById(id).src = "img/Track.jpg";
-    }
-
-    if (imgBen == "img/Wrestle20.jpg")
-    {
-        document.getElementById(id).src = "img/Wrestle10.jpg";
-    }
-
-    else if (imgBen == "img/Wrestle10.jpg")
-    {
-        document.getElementById("pizza3").hidden=true;
-        document.getElementById(id).src = "img/Wrestle.jpg";
-    }
-
-    if (imgBen == "img/champ20.jpg")
-    {
-        document.getElementById(id).src = "img/champ10.jpg";
-    }
-
-    else if (imgBen == "img/champ10.jpg")
-    {
-        document.getElementById("pizza4").hidden=true;
-        document.getElementById(id).src = "img/champ.jpg";
-    }
-    // else
-    // {
-    //     document.getElementById(id).src = "img/HOT.jpg"
-    // }
-
-}
-
-  window.onload = function () {
-      document.getElementById('close-button').onclick = function () {
-      document.getElementById('modal').style.display = "none"
-    };
-  };
-
-</script>
 </html>
